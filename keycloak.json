@@ -1,0 +1,9 @@
+{
+  "realm": "sample-realm",
+  "auth-server-url": "https://sample-url/auth",
+  "ssl-required": "external",
+  "resource": "sample-resource",
+  "credentials": {
+    "secret": "secret-key"
+  }
+}
