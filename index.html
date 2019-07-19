@@ -92,10 +92,6 @@
     keycloak.onAuthSuccess = function () {
         setCookie('itmToken', this.token, 1, "srv-180301.netfective.com");
         setCookie('itmTokenRefresh', this.refreshToken, 1, "srv-180301.netfective.com");
-        const shopIM = document.getElementById('shopIM');
-        const shopIMLocal = document.getElementById('shopIMLocal');
-        shopIM.href = distantUrl + "?connect=" + this.refreshToken;
-        shopIMLocal.href = localUrl + "?connect=" + this.refreshToken;
         event('Auth Success');
     };
 
